@@ -66,17 +66,23 @@ textarea {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid none;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -514,13 +520,11 @@ textarea {
 }
 
 .advantages__list {
-  display: flex;
-  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .advantages__item {
-  margin-right: 30px;
-  width: 270px;
+  margin-bottom: 30px;
 }
 
 .advantages__image {
@@ -528,7 +532,6 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background: var(--section-grey-color);
   border-radius: 4px;
@@ -546,6 +549,7 @@ textarea {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
 

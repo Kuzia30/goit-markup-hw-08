@@ -1,11 +1,13 @@
 .advantages__list {
-  display: flex;
-  margin-right: -30px;
+  // display: flex;
+  // margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .advantages__item {
-  margin-right: 30px;
-  width: 270px;
+  // margin-right: 30px;
+  // width: 270px;
+  margin-bottom: 30px;
 }
 
 .advantages__image {
@@ -13,7 +15,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
 
   background: var(--section-grey-color);
@@ -33,6 +34,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--title-text-color);
 }
