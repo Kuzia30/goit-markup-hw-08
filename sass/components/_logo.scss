@@ -1,0 +1,30 @@
+.logo {
+  @include logo(var(--logo-black-color));
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo__start {
+  color: var(--accent-color);
+}
+
+.logo--dark {
+  @include logo(var(--primary-white-color));
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}

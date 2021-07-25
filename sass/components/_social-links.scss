@@ -1,0 +1,38 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.network__link {
+  fill: var(--icons-grey-color);
+
+  @include transition(fill);
+  @include transition(background-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.follow__social-link {
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @include transition(background-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
