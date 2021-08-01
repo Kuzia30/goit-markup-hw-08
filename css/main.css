@@ -868,12 +868,7 @@ textarea {
 }
 
 .footer__section {
-  display: flex;
-  align-items: baseline;
-}
-
-.address__column {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .address__item:not(:last-child) {
@@ -899,8 +894,9 @@ textarea {
   color: var(--primary-white-color);
 }
 
-.follow__column {
-  margin-right: 93px;
+.follow__list {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__caption {
@@ -922,11 +918,6 @@ textarea {
 
 .form__column {
   flex-grow: 1;
-}
-
-.subscribe__wrap {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .subscribe__wrap input {
