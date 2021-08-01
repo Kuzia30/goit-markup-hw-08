@@ -1,8 +1,12 @@
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -12,11 +16,21 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .clients__item {
+  width: calc((100% - 60px) / 2);
   margin-right: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients__link {
@@ -24,7 +38,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icons-grey-color);
   box-sizing: border-box;
