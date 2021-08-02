@@ -1059,10 +1059,17 @@ textarea {
 }
 
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
+  margin-top: 40px;
   margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .examples-list-item-link {
@@ -1077,9 +1084,20 @@ textarea {
 }
 
 .examples-list-item {
-  width: calc((100% - 90px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list-item {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-list-item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .examples-list-item-block {
