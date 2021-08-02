@@ -10,6 +10,9 @@
 }
 
 .examples-list-item-link {
+  display: flex;
+  flex-direction: column;
+
   @include transition(box-shadow);
 
   &:hover {
@@ -31,6 +34,7 @@
 }
 
 .examples-list-item-block {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
