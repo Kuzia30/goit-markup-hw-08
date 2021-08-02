@@ -795,6 +795,10 @@ textarea {
   margin: 0 auto;
 }
 
+.team-img {
+  width: 100%;
+}
+
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
