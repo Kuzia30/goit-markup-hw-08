@@ -498,6 +498,16 @@ textarea {
   fill: var(--accent-color);
 }
 
+.mobile-menu__container {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-white-color);
+}
+
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
