@@ -498,11 +498,9 @@ textarea {
 }
 
 .mob-social__list {
-  max-width: 380px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -10px;
-  margin-right: -10px;
 }
 
 .mob-social__item {
@@ -510,6 +508,7 @@ textarea {
 }
 
 .mob-social__link {
+  display: flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -519,6 +518,7 @@ textarea {
 
 .mob-social__link--line::after {
   content: "";
+  display: block;
   margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
