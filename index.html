@@ -23,7 +23,7 @@
   <body>
     <!-- шапка -->
     <header class="header">
-      <div class="container">
+      <div class="container header__wrap">
         <nav class="navigation">
           <a href="./index.html" class="logo link">
             <span class="logo__start">Web</span>Studio
@@ -36,16 +36,14 @@
               >
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
             </li>
             <li class="menu__item">
               <a href="" class="menu__link link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger-btn" data-menu-open>
           <svg class="burger-btn__icon">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -69,12 +67,65 @@
           </li>
         </ul>
       </div>
-      <div class="container mobile-menu__container">
-        <button type="button" class="mobile-menu__btn-close" data-modal-close>
-          <svg class="btn-close-img">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__btn-close" data-menu-close>
+            <svg class="mobile-menu__btn-close--icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav__list list">
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link link">
+                Студия
+              </a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link link">
+                Портфолио
+              </a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link link">
+                Контакты
+              </a>
+            </li>
+          </ul> 
+          <ul class="mob-contacts__list list">
+            <li class="mob-contacts__item">
+              <a href="" class="mob-contacts__link link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mob-contacts__item">
+              <a href="" class="mob-contacts__link link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-social__list list">
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link">
+                Instagram
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link">
+                Twitter
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link">
+                Facebook
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -138,9 +189,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages__caption">
-                Современные технологии
-              </h3>
+              <h3 class="advantages__caption">Современные технологии</h3>
               <p class="advantages__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -156,24 +205,39 @@
           <ul class="business__list list">
             <li class="business__item">
               <picture>
-                <source srcset="./images/box-1.webp 1x, ./images/box-1@2x.webp 2x" type="image/webp">
-                <source srcset="./images/box-1.jpg 1x, ./images/box-1@2x.jpg 2x">
+                <source
+                  srcset="./images/box-1.webp 1x, ./images/box-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box-1.jpg 1x, ./images/box-1@2x.jpg 2x"
+                />
                 <img src="#" alt="сайты для ПК" />
               </picture>
               <p class="business__text">Десктопные приложения</p>
             </li>
             <li class="business__item">
               <picture>
-                <source srcset="./images/box-2.webp 1x, ./images/box-2@2x.webp 2x" type="image/webp">
-                <source srcset="./images/box-2.jpg 1x, ./images/box-2@2x.jpg 2x">
-              <img   src="#" alt="сайты для телефонов" />
+                <source
+                  srcset="./images/box-2.webp 1x, ./images/box-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box-2.jpg 1x, ./images/box-2@2x.jpg 2x"
+                />
+                <img src="#" alt="сайты для телефонов" />
               </picture>
               <p class="business__text">Мобильные приложения</p>
             </li>
             <li class="business__item">
               <picture>
-                <source srcset="./images/box-3.webp 1x, ./images/box-3@2x.webp 2x" type="image/webp">
-                <source srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x">
+                <source
+                  srcset="./images/box-3.webp 1x, ./images/box-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x"
+                />
                 <img src="#" alt="сайты для планшетов" />
               </picture>
               <p class="business__text">Дизайнерские решения</p>
@@ -188,9 +252,14 @@
           <ul class="team__list list">
             <li class="team__item">
               <picture>
-                <source srcset="./images/igor-d.webp 1x, ./images/igor-d@2x.webp 2x" type="image/webp">
-                <source srcset="./images/igor-d.jpg 1x, ./images/igor-d@2x.jpg 2x">
-              <img src="#" alt="Игорь Демьяненко"/>
+                <source
+                  srcset="./images/igor-d.webp 1x, ./images/igor-d@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/igor-d.jpg 1x, ./images/igor-d@2x.jpg 2x"
+                />
+                <img src="#" alt="Игорь Демьяненко" />
               </picture>
               <div class="team__block">
                 <h3 class="team__caption">Игорь Демьяненко</h3>
@@ -229,8 +298,13 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/olha-r.webp 1x, ./images/olha-r@2x.webp 2x" type="image/webp">
-                <source srcset="./images/olha-r.jpg 1x, ./images/olha-r@2x.jpg 2x">
+                <source
+                  srcset="./images/olha-r.webp 1x, ./images/olha-r@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/olha-r.jpg 1x, ./images/olha-r@2x.jpg 2x"
+                />
                 <img src="#" alt="Ольга Репина" />
               </picture>
               <div class="team__block">
@@ -270,8 +344,19 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/nikolay-t.webp 1x, ./images/nikolay-t@2x.webp 2x" type="image/webp">
-                <source srcset="./images/nikolay-t.jpg 1x, ./images/nikolay-t@2x.jpg 2x">
+                <source
+                  srcset="
+                    ./images/nikolay-t.webp    1x,
+                    ./images/nikolay-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay-t.jpg    1x,
+                    ./images/nikolay-t@2x.jpg 2x
+                  "
+                />
                 <img src="#" alt="Николай Тарасов" />
               </picture>
               <div class="team__block">
@@ -311,8 +396,19 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/mikhail-e.webp 1x, ./images/mikhail-e@2x.webp 2x" type="image/webp">
-                <source srcset="./images/mikhail-e.jpg 1x, ./images/mikhail-e@2x.jpg 2x">
+                <source
+                  srcset="
+                    ./images/mikhail-e.webp    1x,
+                    ./images/mikhail-e@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mikhail-e.jpg    1x,
+                    ./images/mikhail-e@2x.jpg 2x
+                  "
+                />
                 <img src="#" alt="Михаил Ермаков" />
               </picture>
               <div class="team__block">
@@ -422,9 +518,7 @@
                 >
               </li>
               <li class="address__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="address__link link"
+                <a href="mailto:info@example.com" class="address__link link"
                   >info@example.com</a
                 >
               </li>
@@ -578,6 +672,7 @@
       </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
