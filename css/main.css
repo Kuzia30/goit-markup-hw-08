@@ -409,12 +409,10 @@ textarea {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
@@ -471,6 +469,33 @@ textarea {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+.burger-btn {
+  margin: 10px;
+  margin-left: auto;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.burger-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--logo-black-color);
+  background-color: transparent;
+}
+
+.burger-btn__icon:focus, .burger-btn__icon:hover {
+  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
