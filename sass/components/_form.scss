@@ -1,14 +1,28 @@
+.modal__form {
+  min-width: 240px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+}
+
 .modal__caption {
   display: inline-block;
   margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__wrap {
@@ -95,13 +109,24 @@
 }
 
 .check__label {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 479px) {
+    justify-content: start;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   color: var(--primary-text-color);
 
@@ -126,9 +151,17 @@
 
 .check__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  @media screen and (max-width: 479px) {
+    font-size: 11px;
+  }
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   color: var(--accent-color);
 }
