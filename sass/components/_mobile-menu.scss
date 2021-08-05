@@ -8,13 +8,15 @@
   height: 100vh;
   background-color: var(--primary-white-color);
 
+  transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  @include transition(opacity);
+  @include transition2(opacity, transform);
 }
 
 .mobile-menu.is-open {
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
